@@ -10,8 +10,7 @@ import youtube_dl
 from async_timeout import timeout
 from discord.ext import commands
 
-vc = await channel.connect()
-vc.play(discord.FFmpegPCMAudio(executable="C:/path/ffmpeg.exe", source="mp3.mp3"))
+
 
 # Silence useless bug reports messages
 youtube_dl.utils.bug_reports_message = lambda: ''
