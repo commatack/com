@@ -5,13 +5,14 @@ import math
 import random
 import os
 import ffmpeg
+import sys
 
 import discord
 import youtube_dl
 from async_timeout import timeout
 from discord.ext import commands
 
-
+sys.path.append(r'ffmpeg.exe')
 
 # Silence useless bug reports messages
 youtube_dl.utils.bug_reports_message = lambda: ''
