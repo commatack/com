@@ -13,6 +13,7 @@ from async_timeout import timeout
 from discord.ext import commands
 
 sys.path.append(r'ffmpeg.exe')
+stream = ffmpeg.input('sea-video.mp4')
 
 # Silence useless bug reports messages
 youtube_dl.utils.bug_reports_message = lambda: ''
