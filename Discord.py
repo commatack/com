@@ -4,7 +4,7 @@ import itertools
 import math
 import random
 import os
-import ffmpeg
+import ffmpeg.exe
 
 import discord
 import youtube_dl
