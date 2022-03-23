@@ -4,10 +4,7 @@ import itertools
 import math
 import random
 import os
-import ffmpeg
-import sys
-
-
+from discord import DefaultAvatar
 import discord
 import youtube_dl
 from async_timeout import timeout
@@ -228,7 +225,7 @@ class VoiceState:
                 # the player will disconnect due to performance
                 # reasons.
                 try:
-                    async with timeout(180):  # 3 minutes
+                    async with timeout(300):  # 3 minutes
                         self.current = await self.songs.get()
                 except asyncio.TimeoutError:
                     self.bot.loop.create_task(self.stop())
@@ -500,6 +497,13 @@ bot.add_cog(Music(bot))
 @bot.event
 async def on_ready():
     print('Logged in as:\n{0.user.name}\n{0.user.id}'.format(bot))
+
+@bot.command(name='avatar', help='fetch avatar of a user')
+async def dp(ctx, *, member: discord.Member = None):
+    if not member:
+        member = ctx.message.author
+    userAvatar = member.avatar_url
+    await ctx.send(userAvatar)
 
 
 
