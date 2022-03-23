@@ -1,1 +1,1 @@
-worker: python Discord.py ffmpeg.exe
+worker: python Discord.py
