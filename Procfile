@@ -1,1 +1,1 @@
-worker: python Discord.py
+worker: python 드가자.py
