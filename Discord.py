@@ -4,7 +4,6 @@ import itertools
 import math
 import random
 import os
-from discord import DefaultAvatar
 import discord
 import youtube_dl
 from async_timeout import timeout
