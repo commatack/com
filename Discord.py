@@ -1,4 +1,4 @@
-import discord.py
+import discord
 import asyncio
 import functools
 import itertools
