@@ -1,1 +1,1 @@
-worker: python 드가자.py
+worker: python music.py
