@@ -11,7 +11,7 @@ from async_timeout import timeout
 from discord.ext import commands
 
 
-FFMPEG_DOWNLOAD_URL = "https://www.youtube.com/"
+FFMPEG_DOWNLOAD_URL = ""
 
 
 # Silence useless bug reports messages
