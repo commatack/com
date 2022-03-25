@@ -10,7 +10,7 @@ import youtube_dl
 from async_timeout import timeout
 from discord.ext import commands
 
-FFMPEG_DOWNLOAD_URL = https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz
+FFMPEG_DOWNLOAD_URL = https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git
 
 
 # Silence useless bug reports messages
