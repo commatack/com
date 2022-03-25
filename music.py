@@ -11,6 +11,9 @@ from async_timeout import timeout
 from discord.ext import commands
 
 
+FFMPEG_DOWNLOAD_URL = "https://johnvansickle.com/ffmpeg/builds/ffmpeg-git-amd64-static.tar.xz"
+
+
 # Silence useless bug reports messages
 youtube_dl.utils.bug_reports_message = lambda: ''
 
