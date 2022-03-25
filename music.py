@@ -10,6 +10,7 @@ import youtube_dl
 from async_timeout import timeout
 from discord.ext import commands
 
+FFMPEG_DOWNLOAD_URL = youtube_dl
 
 
 # Silence useless bug reports messages
