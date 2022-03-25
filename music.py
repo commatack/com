@@ -11,8 +11,6 @@ from async_timeout import timeout
 from discord.ext import commands
 
 
-FFMPEG_DOWNLOAD_URL = ""
-
 
 # Silence useless bug reports messages
 youtube_dl.utils.bug_reports_message = lambda: ''
@@ -506,6 +504,7 @@ async def dp(ctx, *, member: discord.Member = None):
         member = ctx.message.author
     userAvatar = member.avatar_url
     await ctx.send(userAvatar)
+
 
 
 access_token = os.environ["BOT_TOKEN"]
